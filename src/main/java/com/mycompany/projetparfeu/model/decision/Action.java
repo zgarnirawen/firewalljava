@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.mycompany.projetparfeu.model.decision;
 
 /**
@@ -11,7 +7,6 @@ package com.mycompany.projetparfeu.model.decision;
  * 
  * @author ZGARNI
  */
-
 public sealed interface Action 
     permits AcceptAction, DropAction, LogAction, AlertAction {
     

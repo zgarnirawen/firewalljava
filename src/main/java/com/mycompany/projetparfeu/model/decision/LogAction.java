@@ -4,7 +4,7 @@
  */
 package com.mycompany.projetparfeu.model.decision;
 
-final class LogAction implements Action {
+public final class LogAction implements Action {
     
     private static final LogAction INSTANCE = new LogAction();
     

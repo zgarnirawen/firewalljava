@@ -4,7 +4,7 @@ package com.mycompany.projetparfeu.model.decision;
  * AcceptAction - Accepter le paquet.
  * Implémente Action (interface fonctionnelle).
  */
-final class AcceptAction implements Action {
+ public final class AcceptAction implements Action {
     
     private static final AcceptAction INSTANCE = new AcceptAction();
     

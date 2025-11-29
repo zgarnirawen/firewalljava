@@ -4,7 +4,7 @@
  */
 package com.mycompany.projetparfeu.model.decision;
 
-final class DropAction implements Action {
+public final class DropAction implements Action {
     
     private static final DropAction INSTANCE = new DropAction();
     

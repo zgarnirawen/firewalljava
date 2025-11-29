@@ -1,6 +1,6 @@
 package com.mycompany.projetparfeu.model.decision;
 
-final class AlertAction implements Action {
+public final class AlertAction implements Action {
     
     private static final AlertAction INSTANCE = new AlertAction();
     

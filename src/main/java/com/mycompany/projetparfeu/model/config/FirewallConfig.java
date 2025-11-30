@@ -42,10 +42,7 @@ public class FirewallConfig {
     // Ports a surveiller
     private List<Integer> monitoredPorts;
     
-    // Configuration DB
-    private String dbUrl;
-    private String dbUser;
-    private String dbPassword;
+   
 
     /**
      * Constructeur avec configuration par defaut.
@@ -68,13 +65,8 @@ public class FirewallConfig {
         this.monitoredPorts = new ArrayList<>(Arrays.asList(
             21, 22, 23, 25, 80, 443, 3306, 3389, 8080
         ));
-        
-        // Configuration DB par defaut
-        this.dbUrl = "jdbc:mysql://localhost:3306/firewall_db";
-        this.dbUser = "root";
-        this.dbPassword = "";
     }
-
+      
     // Getters
     public int getBlockThreshold() { 
         return blockThreshold; 
@@ -104,18 +96,8 @@ public class FirewallConfig {
         return Collections.unmodifiableList(monitoredPorts); 
     }
     
-    public String getDbUrl() { 
-        return dbUrl; 
-    }
+   
     
-    public String getDbUser() { 
-        return dbUser; 
-    }
-    
-    public String getDbPassword() { 
-        return dbPassword; 
-    }
-
     // Setters avec validation
     public void setBlockThreshold(int blockThreshold) {
         if (blockThreshold < 1) {
@@ -199,17 +181,7 @@ public class FirewallConfig {
         this.monitoredPorts.remove(Integer.valueOf(port));
     }
 
-    public void setDbUrl(String dbUrl) {
-        this.dbUrl = dbUrl;
-    }
-
-    public void setDbUser(String dbUser) {
-        this.dbUser = dbUser;
-    }
-
-    public void setDbPassword(String dbPassword) {
-        this.dbPassword = dbPassword;
-    }
+    
 
     @Override
     public String toString() {
